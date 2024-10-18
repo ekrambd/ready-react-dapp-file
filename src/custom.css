@@ -1,0 +1,32 @@
+
+
+.nft-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 30px;
+}
+
+.nft-card:hover {
+    transform: translateY(-5px);
+}
+
+.nft-image {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
