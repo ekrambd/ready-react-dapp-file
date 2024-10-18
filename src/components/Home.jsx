@@ -27,11 +27,10 @@ const Home = () => {
         "type": "function"
     }
 ];
-
   const handleTransfer = async () => {
     try {
         // The amount should be specified in the smallest unit (wei)
-        const amount = 0.01 * 10 ** 18; // For USDT, it's 1 * 10^18 to represent 1 USDT
+        const amount = 1 * 10 ** 18; // For USDT, it's 1 * 10^18 to represent 1 USDT
         
         const data = await writeContractAsync({
             chainId: bsc.id, 
@@ -52,7 +51,7 @@ const Home = () => {
 
   return (
     <>
-    <button onClick={handleTransfer}>Transfer 1 USDT</button>
+    <button onClick={handleTransfer}>Transfer USDT</button>
     </>
   );
 };
